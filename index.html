@@ -36,6 +36,14 @@
     <span class="sub">CEO · LUMINAR&nbsp;TECHNOLOGY</span>
   </header>
 
+  <button id="audio-toggle" class="audio-toggle" aria-pressed="false" aria-label="Toggle ambient audio">
+    <span class="audio-indicator" aria-hidden="true"></span>
+    <span class="audio-eq" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+    </span>
+    <span class="audio-label">AMBIENCE</span>
+  </button>
+
   <nav class="dots" aria-label="Sections">
     <button data-i="0" class="dot active" aria-label="Genesis"></button>
     <button data-i="1" class="dot" aria-label="Intelligence"></button>
@@ -229,27 +237,79 @@
     </section>
 
     <section class="contact" id="contact">
-      <p class="kicker accent">GET&nbsp;IN&nbsp;TOUCH</p>
-      <h2 class="section-title">Begin a conversation.</h2>
-      <p class="section-sub">For partnerships, press, speaking engagements or a private introduction.</p>
+      <p class="kicker accent">SEND &middot; A &middot; SIGNAL</p>
+      <h2 class="section-title">Begin the conversation.</h2>
+      <p class="section-sub">For partnerships, press, speaking engagements or a private introduction. The particles will carry it.</p>
 
-      <div class="contact-grid">
-        <a class="contact-card" href="mailto:samir@luminartechnology.com">
-          <span class="c-lbl">EMAIL</span>
-          <span class="c-val">samir@luminartechnology.com</span>
-        </a>
-        <a class="contact-card" href="#" target="_blank" rel="noopener">
-          <span class="c-lbl">LINKEDIN</span>
-          <span class="c-val">/in/samirhasan</span>
-        </a>
-        <a class="contact-card" href="#" target="_blank" rel="noopener">
-          <span class="c-lbl">X · TWITTER</span>
-          <span class="c-val">@samirhasan</span>
-        </a>
-        <a class="contact-card" href="https://luminartechnology.com" target="_blank" rel="noopener">
-          <span class="c-lbl">COMPANY</span>
-          <span class="c-val">luminartechnology.com</span>
-        </a>
+      <div class="contact-stage">
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm" autocomplete="off" novalidate>
+            <div class="form-head">
+              <span class="form-mark">◇</span>
+              <span class="form-title">TRANSMISSION</span>
+              <span class="form-id">// CH&middot;06</span>
+            </div>
+
+            <div class="form-row">
+              <label class="field">
+                <span class="field-lbl">NAME</span>
+                <input type="text" name="name" required placeholder="Your full name" />
+                <span class="field-line"></span>
+              </label>
+              <label class="field">
+                <span class="field-lbl">EMAIL</span>
+                <input type="email" name="email" required placeholder="you@domain.com" />
+                <span class="field-line"></span>
+              </label>
+            </div>
+
+            <label class="field">
+              <span class="field-lbl">SUBJECT</span>
+              <input type="text" name="subject" placeholder="Partnership · press · speaking · introduction" />
+              <span class="field-line"></span>
+            </label>
+
+            <label class="field">
+              <span class="field-lbl">MESSAGE</span>
+              <textarea name="message" rows="4" required placeholder="Tell Samir a little about why you're reaching out…"></textarea>
+              <span class="field-line"></span>
+            </label>
+
+            <div class="form-foot">
+              <p class="form-note">Sent via your default mail client to <strong>samir@luminartechnology.com</strong>.</p>
+              <button type="submit" class="send-btn">
+                <span class="btn-glyph">▸</span>
+                <span class="btn-text">TRANSMIT</span>
+                <span class="btn-arrow">→</span>
+              </button>
+            </div>
+
+            <div class="form-success" role="status" aria-live="polite">
+              <span>◇</span>
+              <p>Signal away. Your mail client should be opening — Samir will reply personally.</p>
+            </div>
+          </form>
+        </div>
+
+        <aside class="contact-direct">
+          <p class="direct-lbl">OR REACH DIRECTLY</p>
+          <a href="mailto:samir@luminartechnology.com" class="direct-link">
+            <span class="d-lbl">EMAIL</span>
+            <span class="d-val">samir@luminartechnology.com</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="direct-link">
+            <span class="d-lbl">LINKEDIN</span>
+            <span class="d-val">/in/samirhasan</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener" class="direct-link">
+            <span class="d-lbl">X · TWITTER</span>
+            <span class="d-val">@samirhasan</span>
+          </a>
+          <a href="https://luminartechnology.com" target="_blank" rel="noopener" class="direct-link">
+            <span class="d-lbl">COMPANY</span>
+            <span class="d-val">luminartechnology.com</span>
+          </a>
+        </aside>
       </div>
     </section>
 
@@ -266,7 +326,6 @@
   <div class="canvas-scrim"></div>
 
   <footer class="meta">
-    <span class="scroll-cta">SCROLL&nbsp;TO&nbsp;ENTER</span>
     <span class="copyright">© SAMIR&nbsp;HASAN</span>
   </footer>
 
